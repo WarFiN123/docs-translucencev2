@@ -4,6 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Navbar />
           <main className="sm:container mx-auto w-[85vw] h-auto">
             {children}
+            <Analytics />
           </main>
           <Footer />
         </ThemeProvider>
