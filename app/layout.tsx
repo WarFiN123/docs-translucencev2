@@ -4,13 +4,49 @@ import { Navbar } from "@/components/navbar";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Docs stater template",
-  metadataBase: new URL("https://docstemplate.vercel.app/"),
-  description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+  title: {
+    default: "TranslucenceV2",
+    template: "%s",
+  },
+  description: "Acrylic theme for Discord",
+  openGraph: {
+    title: "TranslucenceV2",
+    description:
+      "Acrylic theme for Discord",
+    url: "https://translucencev2.vercel.app",
+    siteName: "TrancelucenceV2",
+    images: [
+      {
+        url: "https://images2.imgbox.com/96/e6/BTja0ggL_o.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large" as const,
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "TranslucenceV2",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +69,7 @@ export default function RootLayout({
           <Navbar />
           <main className="sm:container mx-auto w-[85vw] h-auto">
             {children}
+            <Analytics />
           </main>
           <Footer />
         </ThemeProvider>
