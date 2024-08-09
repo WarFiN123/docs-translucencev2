@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "TranslucenceV2",
     description:
       "Acrylic theme for Discord",
-    url: "https://warfin.vercel.app",
+    url: "https://translucencev2.vercel.app",
     siteName: "TrancelucenceV2",
     images: [
       {
