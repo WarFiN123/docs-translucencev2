@@ -1,3 +1,5 @@
+import { title } from "process";
+
 // for page navigation & to sort on leftbar
 export const ROUTES = [
   {
@@ -6,6 +8,7 @@ export const ROUTES = [
     items: [
       { title: "Overview", href: "/overview" },
       { title: "Installation", href: "/installation" },
+      { title: "Customize", href: "/customize" },
     ],
   },
 ];
