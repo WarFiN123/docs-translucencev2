@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, HexagonIcon } from "lucide-react";
+import { SiDiscord, SiGithub} from "react-icons/si";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import Search from "./search";
@@ -12,22 +12,6 @@ export const NAVLINKS = [
   {
     title: "Documentation",
     href: `/docs/${page_routes[0].href}`,
-  },
-  {
-    title: "Examples",
-    href: "#",
-  },
-  {
-    title: "Guides",
-    href: "#",
-  },
-  {
-    title: "Community",
-    href: "#",
-  },
-  {
-    title: "Blog",
-    href: "#",
   },
 ];
 
@@ -52,19 +36,19 @@ export function Navbar() {
             <Search />
             <div className="flex">
               <Link
-                href="https://github.com/nisabmohd/Docs-Stater-Template"
+                href="https://github.com/warfin123/translucencev2"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
-                <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
+                <SiGithub className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <Link
-                href="#"
+                href="https://discord.com/invite/t6CKrYvQuE"
                 className={buttonVariants({
                   variant: "ghost",
                   size: "icon",
                 })}
               >
-                <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
+                <SiDiscord className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <ModeToggle />
             </div>
@@ -78,8 +62,8 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <HexagonIcon className="w-7 h-7 text-muted-foreground fill-current" />
-      <h2 className="text-md font-bold">template/docs</h2>
+      <img src="https://github.com/WarFiN123/TranslucenceV2/blob/89fdd3efd4dd5f2f27b60f23b6661ac36f42a5b8/Logo.webp?raw=true" className="w-7 h-7 text-muted-foreground fill-current" />
+      <h2 className="text-md font-bold">TranslucenceV2/docs</h2>
     </Link>
   );
 }
