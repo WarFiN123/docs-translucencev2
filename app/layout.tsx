@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: "TrancelucenceV2",
     images: [
       {
-        url: "",
+        url: "https://github.com/WarFiN123/docs-translucencev2/blob/25871b942226a21c5b492a92c418e563f1690751/app/opengraph-image.png?raw=true",
         width: 1920,
         height: 1080,
       },
