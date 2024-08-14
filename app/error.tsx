@@ -1,19 +1,19 @@
-"use client"; // Error components must be Client Components
+"use client"; // Failure components must be Client Components
 
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
-export default function Error({
-  error,
+export default function Failure({
+  failure,
   reset,
 }: {
-  error: Error & { digest?: string };
+  failure: Error & { digest?: string };
   reset: () => void;
 }) {
   useEffect(() => {
-    // Log the error to an error reporting service
-    console.error(error);
-  }, [error]);
+    // Log the failure to an failure reporting service
+    console.error(failure);
+  }, [failure]);
 
   return (
     <div className="min-h-[99vh] px-2 py-8 flex flex-col gap-3 items-start">
