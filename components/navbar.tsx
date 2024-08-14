@@ -62,7 +62,7 @@ export function Navbar() {
 export function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5">
-      <img src="https://github.com/WarFiN123/TranslucenceV2/blob/89fdd3efd4dd5f2f27b60f23b6661ac36f42a5b8/Logo.webp?raw=true" className="w-7 h-7 text-muted-foreground fill-current" />
+      <img src="https://github.com/WarFiN123/TranslucenceV2/blob/89fdd3efd4dd5f2f27b60f23b6661ac36f42a5b8/Logo.webp?raw=true" className="w-7 h-7 text-muted-foreground fill-current" alt="Logo"/>
       <h2 className="text-md font-bold">TranslucenceV2/docs</h2>
     </Link>
   );

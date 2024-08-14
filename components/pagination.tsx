@@ -1,5 +1,4 @@
 import { getPreviousNext } from "@/lib/markdown";
-import { buttonVariants } from "./ui/button";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 
