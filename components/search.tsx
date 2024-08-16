@@ -35,9 +35,9 @@ export default function Search() {
   const filteredResults = useMemo(
     () =>
       page_routes.filter((item) =>
-        item.title.toLowerCase().includes(searchedInput.toLowerCase())
+        item.title.toLowerCase().includes(searchedInput.toLowerCase()),
       ),
-    [searchedInput]
+    [searchedInput],
   );
 
   return (
