@@ -26,7 +26,7 @@ export default function TocObserver({ data }: Props) {
     });
 
     const elements = data.map((item) =>
-      document.getElementById(item.href.slice(1))
+      document.getElementById(item.href.slice(1)),
     );
 
     elements.forEach((el) => {

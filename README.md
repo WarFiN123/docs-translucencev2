@@ -45,9 +45,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Got it! Here's a way to present the features in a more structured and visually appealing way using a table:
 
-
-
-
 ## Features
 
 ```plaintext

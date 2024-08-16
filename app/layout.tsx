@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Footer } from "@/components/footer";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,8 +15,7 @@ export const metadata: Metadata = {
   description: "Acrylic theme for Discord",
   openGraph: {
     title: "TranslucenceV2",
-    description:
-      "Acrylic theme for Discord",
+    description: "Acrylic theme for Discord",
     url: "https://translucencev2.vercel.app",
     siteName: "TrancelucenceV2",
     images: [

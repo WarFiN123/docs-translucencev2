@@ -69,7 +69,7 @@ pre {
   overflow-x: auto;
 }
 
-pre>code {
+pre > code {
   display: grid;
   max-width: inherit !important;
   padding: 14px 0 !important;
@@ -90,7 +90,6 @@ pre>code {
   text-align: right;
 }
 
-
 .highlight-line {
   @apply dark:bg-neutral-800/90;
   @apply bg-neutral-200/90;
@@ -105,11 +104,11 @@ pre>code {
 }
 
 .keyword {
-  color: rgb(255, 50, 115)
+  color: rgb(255, 50, 115);
 }
 
 .function {
-  color: hsla(210, 100%, 66%, 1)
+  color: hsla(210, 100%, 66%, 1);
 }
 
 .string,
@@ -117,7 +116,7 @@ pre>code {
 .annotation,
 .boolean,
 .number {
-  color: hsl(0, 0%, 29%)
+  color: hsl(0, 0%, 29%);
 }
 
 .dark .string,
@@ -125,19 +124,19 @@ pre>code {
 .dark .annotation,
 .dark .boolean,
 .dark.number {
-  color: hsl(0, 0%, 71%)
+  color: hsl(0, 0%, 71%);
 }
 
 .dark .keyword {
-  color: hsla(341, 90%, 67%, 1)
+  color: hsla(341, 90%, 67%, 1);
 }
 
 .attr-value {
-  color: hsla(131, 43%, 57%, 1)
+  color: hsla(131, 43%, 57%, 1);
 }
 
 .tag {
-  color: hsla(341, 90%, 67%, 1)
+  color: hsla(341, 90%, 67%, 1);
 }
 
 .attr-name {
@@ -146,7 +145,6 @@ pre>code {
 
 .dark .attr-name {
   color: #cacaca;
-
 }
 
 .rehype-code-title {
@@ -162,6 +160,6 @@ pre>code {
   font-family: var(--font-code) !important;
 }
 
-.highlight-comp>code {
+.highlight-comp > code {
   background-color: transparent !important;
 }
