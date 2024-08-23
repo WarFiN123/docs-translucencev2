@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import LocalFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { GeistSans } from "geist/font/sans";
@@ -48,13 +49,23 @@ export const metadata: Metadata = {
   },
 };
 
+const Heroeau = LocalFont({
+  src: "../public/fonts/Heroeau.ttf",
+  variable: "--font-heroeau",
+});
+
+const Cfour = LocalFont({
+  src: "../public/fonts/Cfour.otf",
+  variable: "--font-cfour",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={[Heroeau.variable, Cfour.variable].join(" ")}>
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} font-regular`}
         suppressHydrationWarning
