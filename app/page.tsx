@@ -20,7 +20,9 @@ export default function Home() {
         Follow along on GitHub{" "}
         <FaArrowUpRightFromSquare className="w-4 h-4 font-extrabold" />
       </Link>
-      <h1 className="text-3xl font-bold mb-4 sm:text-7xl font-display">Translucence</h1>
+      <h1 className="text-3xl font-bold mb-4 sm:text-7xl font-display">
+        Translucence
+      </h1>
       <h1 className="text-3xl font-bold mb-4 sm:text-7xl font-modern">V2</h1>
       <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground text">
         Acrylic theme for Discord<br></br>

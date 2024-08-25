@@ -65,7 +65,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={[Heroeau.variable, Cfour.variable].join(" ")}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={[Heroeau.variable, Cfour.variable].join(" ")}
+    >
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} font-regular`}
         suppressHydrationWarning
